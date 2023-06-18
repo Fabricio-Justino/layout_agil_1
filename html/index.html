@@ -3,10 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" href="../css/main_style.css">
+
+    <title>Aceleradora Agil layout</title>
 </head>
 <body>
     
+<main class="container flex-style">
+
+    <section class="profile-infos">
+        <div class="profile-image">
+            <div class="image-container">
+                <img src="../img/blank-profile-picture-973460_1280.webp" alt="">
+            </div>
+        </div>
+        <div class="profile-name">
+            <h2>Glória</h2>
+        </div>
+        <div class="profile-description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio error ea similique quaerat ex? Dolorem, eaque minima? Aliquid nemo aliquam consequatur aut, rerum voluptate esse et ducimus voluptates! Dolorem, asperiores.
+        </div>
+        <div class="social-media">
+            <ul class="list-link">
+                <li><a href=”#”>Link1</a></li>
+                <li><a href=”#”>Link2</a></li>
+                <li><a href=”#”>Link3</a></li>
+                <li><a href=”#”>Link4</a></li>
+            </ul>
+        </div>
+    </section> <!-- profile-infos -->
+
+    <aside class="todo-list-view">
+        <div class="todo-list-title-container">
+            <span id="trash">🗑</span>
+            <h2>LISTA DE TAREFAS</h2>   
+        </div>
+        <div class="todo-list-container">
+            <div id="day"  class="todo-list">
+                <div class="title">
+                    <h2>DIA</h2>
+                    <span>novo</span>
+                </div>
+                <ul class="list-todo">
+                    <li>Começar com um bom dia.</li>
+                </ul>
+            </div>
+            <div id="night" class="todo-list">
+                <div class="title">
+                    <h2>NOITE</h2>
+                    <span>novo</span>
+                </div>
+                <ul class="list-todo">
+                    <li>Ter uma boa noite de sono</li>
+                </ul>
+            </div>
+        </div>
+    </aside> <!-- right-side -->
+</main>
+
+
+<script defer src="../js/deixa_com_mesma_altura.js"></script>
+<script defer src="../js/adiciona_e_remove_tarefa.js"></script>
 </body>
 </html>

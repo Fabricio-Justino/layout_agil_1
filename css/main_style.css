@@ -1,0 +1,180 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-left: 23.5%;
+    border: 1px solid black;
+}
+
+
+.red-border {
+    border: 2px solid red;
+}
+
+ul.list-todo > li {
+    position: relative;
+    width: 100%;
+    padding: 3px;
+    list-style-position: inside;
+    list-style-type: disc;
+    cursor: pointer;
+}
+
+ul.list-todo > li:hover:not(.is-dragging) {
+    transition: .5s;
+    background-color: lightslategray;
+    color: white;
+}
+
+ul.list-link > li {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.container {
+    display: flex;
+
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0.2%;
+}
+
+
+.flex-style{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: baseline;
+    align-items: stretch;
+
+    gap: 3px;
+
+    height: 100%;
+    width: 100%;
+}
+
+main > section {
+    width: 40%;
+    height: 100%;
+}
+
+main > aside {
+    background-color: lightgray;
+    width: 60%;
+    height: 100%;
+}
+
+section.profile-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    text-align: center;
+}
+
+section.profile-infos img {
+    max-width: 150px;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+}
+
+aside.todo-list-view {
+    overflow-y: scroll;
+    text-align: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+aside.todo-list-view div > h2 {
+    display: inline;
+    margin-bottom: 30px;
+}
+
+aside.todo-list div.title {
+    position: absolute;
+}
+
+aside.todo-list-view div.title > span {
+    cursor: pointer;
+
+    display: inline;
+    position: relative;
+    left: 80px;
+
+    padding: 2px;
+
+    border: 1px solid black;
+}
+
+aside.todo-list-view div.title > span:hover {
+    transition: color .8s;
+    transition: border .8s;
+
+    color: royalblue;
+    border: 1px solid royalblue;
+}
+
+aside.todo-list-view div.todo-list-title-container > span#trash {
+    display: none;
+    float: left;
+    
+    position: relative;
+    left: 6px;
+    top: 2px;
+
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 40px;
+}
+
+
+
+.todo-list-container {
+    display: flex;
+    flex-direction: row;
+
+    align-items: baseline;
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 5px;
+    width: 100%;
+}
+
+.todo-list-container h2 {
+    text-align: center;
+}
+
+.todo-list {
+    display: block;
+    padding: 10px 2px;
+    background-color: white;
+    
+    width: 50%;
+    
+    text-align: center;
+    border-radius: 3px;
+}
+
+.is-dragging {
+    cursor: move;
+    opacity: 0.8;
+    background-color: rgba(0, 128, 0, 0.45);
+}
+
+.dropzone-activate {
+    transition: 0.5s;
+    background-color: rgba(35, 140, 245, 0.175);
+}
